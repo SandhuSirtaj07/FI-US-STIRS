@@ -1,0 +1,360 @@
+/* Reset default margins and ensure full viewport */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: #000000 url('https://www.transparenttextures.com/patterns/stardust.png') repeat;
+  text-align: center;
+}
+
+.app {
+  font-family: 'Orbitron', sans-serif;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background: transparent;
+  color: #d0d0d0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #4a4a7a;
+  position: relative;
+  z-index: 10;
+}
+
+.header h1 {
+  color: #ff4d4d;
+  margin: 0;
+  font-size: 4rem;
+  text-shadow: 0 0 12px rgba(255, 77, 77, 0.7);
+  letter-spacing: 2px;
+}
+
+.navbar {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #b0b0ff;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.nav-link:hover {
+  background: rgba(255, 77, 77, 0.3);
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+.main-content {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.sheet-container {
+  width: 100%;
+  max-width: 95%;
+  margin: 0 auto;
+  background: rgba(20, 20, 30, 0.9);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+.sheet-container h2 {
+  color: #d0d0d0;
+  border-bottom: 1px solid #4a4a7a;
+  padding-bottom: 0.75rem;
+  margin: 0 0 1.5rem 0;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.sheet-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(30, 30, 40, 0.9);
+  color: #d0d0d0;
+  border: 1px solid #4a4a7a;
+  table-layout: auto;
+}
+
+.sheet-table th,
+.sheet-table td {
+  border: 1px solid #4a4a7a;
+  padding: 0.75rem;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.sheet-table th {
+  background: rgba(255, 77, 77, 0.3);
+  font-weight: 600;
+}
+
+.sheet-table tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.sheet-table tr:hover {
+  background: rgba(255, 77, 77, 0.2);
+}
+
+.sheet-table td:first-child {
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+p {
+  color: #b0b0ff;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+canvas {
+  width: 100% !important;
+  max-width: 95%;
+  margin: 0 auto;
+  background: rgba(20, 20, 30, 0.9);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.meetings-container {
+  width: 100%;
+  max-width: 95%;
+  margin: 0 auto;
+  background: rgba(20, 20, 30, 0.9);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: flex-start; /* Align tops of table and textarea */
+}
+
+.meetings-table {
+  flex: 1;
+  min-width: 200px; /* Suitable for 2-column table */
+}
+
+.meetings-table h2 {
+  color: #d0d0d0;
+  border-bottom: 1px solid #4a4a7a;
+  padding-bottom: 0.75rem;
+  margin: 0 0 1rem 0;
+  text-align: center;
+  font-size: 1.8rem;
+}
+.news-feed {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.news-feed h2 {
+  color: #d0d0d0;
+  border-bottom: 1px solid #4a4a7a;
+  padding-bottom: 0.75rem;
+  margin: 0 0 1rem 0;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+@media (max-width: 768px) {
+  .app {
+    padding: 1rem;
+  }
+
+  .header {
+    max-width: 100%;
+  }
+
+  .main-content {
+    max-width: 100%;
+  }
+
+  .header h1 {
+    font-size: 2.5rem;
+  }
+
+  .sheet-container, .meetings-container {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .sheet-container h2, .news-feed h2 {
+    font-size: 1.5rem;
+  }
+
+  .sheet-table th,
+  .sheet-table td {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+ .meetings-container {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.5rem;
+}
+
+.meetings-table {
+  flex: 1.5; /* Reduced from 2 */
+  background: rgba(30, 30, 40, 0.9);
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #4a4a7a;
+  max-height: 300px; /* Fixed height for reference */
+  overflow-y: auto;
+}
+
+.news-feed {
+  flex: 1.5; /* Increased from 1 */
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.market-fundamentals,
+.fed-comments {
+  background: rgba(30, 30, 40, 0.9);
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #4a4a7a;
+  height: 150px; /* 50% of meetings-table height (300px) */
+  overflow-y: auto;
+}
+
+.market-fundamentals h2,
+.fed-comments h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+  color: #ff4d4d;
+}
+
+.sheet-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Orbitron', sans-serif;
+  color: #ffffff;
+}
+
+.sheet-table th,
+.sheet-table td {
+  padding: 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid #4a4a7a;
+}
+
+.sheet-table th {
+  background: #2a2a4a;
+  font-weight: bold;
+}
+
+.data-table th,
+.data-table td {
+  padding: 0.4rem; /* Slightly reduced padding */
+  font-size: 0.9rem; /* Slightly larger font for readability */
+}
+
+.data-table {
+  table-layout: fixed; /* Enforce column widths */
+}
+
+.data-table tbody {
+  display: block;
+  height: 100px; /* Compact content area, leaving room for headers */
+  overflow-y: auto;
+}
+
+.data-table thead,
+.data-table tr {
+  display: table;
+  width: 100%;
+}
+
+.sheet-table::-webkit-scrollbar,
+.data-table::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sheet-table::-webkit-scrollbar-track,
+.data-table::-webkit-scrollbar-track {
+  background: #2a2a4a;
+}
+
+.sheet-table::-webkit-scrollbar-thumb,
+.data-table::-webkit-scrollbar-thumb {
+  background: #ff4d4d;
+  border-radius: 3px;
+}}
+
+@media (min-width: 1024px) {
+  .sheet-container, .meetings-container {
+    max-width: 90%;
+  }
+
+  .header h1 {
+    font-size: 4.5rem;
+  }
+
+  .sheet-container h2, .news-feed h2 {
+    font-size: 2rem;
+  }
+
+  .sheet-table th,
+  .sheet-table td {
+    font-size: 1.1rem;
+    padding: 1rem;
+  }
+
+  canvas {
+    max-width: 90%;
+  }
+}
+
+.sheet-table {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
