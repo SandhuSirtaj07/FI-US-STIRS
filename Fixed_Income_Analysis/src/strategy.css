@@ -1,0 +1,176 @@
+.strategy-container {
+  font-family: 'Orbitron', sans-serif;
+  width: 100%;
+  max-width: 100%; /* Changed from 95% to 100% to fill page width */
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(20, 20, 30, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  color: #d0d0d0;
+  box-sizing: border-box; /* Ensure padding doesn't cause overflow */
+}
+
+.strategy-container h1 {
+  color: #ff4d4d;
+  font-size: 2.5rem;
+  text-shadow: 0 0 12px rgba(255, 77, 77, 0.7);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.strategy-container h2 {
+  color: #d0d0d0;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.strategy-container h3 {
+  color: #ff4d4d;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.strategy-container p {
+  color: #b0b0ff;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.full-width {
+  width: 100%;
+  margin-bottom: 20px;
+  box-sizing: border-box; /* Ensure table respects container width */
+}
+
+.strategy-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background: rgba(30, 30, 40, 0.9);
+  color: #d0d0d0;
+  border: 1px solid #4a4a7a;
+  table-layout: fixed; /* Ensure consistent column widths */
+}
+
+.strategy-table th,
+.strategy-table td {
+  border: 1px solid #4a4a7a;
+  padding: 8px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.strategy-table th {
+  background: rgba(255, 77, 77, 0.3);
+  font-weight: 600;
+}
+
+.strategy-table input {
+  width: 80px;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #4a4a7a;
+  color: #d0d0d0;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.9rem;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.spreads-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  width: 100%; /* Ensure container spans full width */
+  box-sizing: border-box;
+}
+
+.spread-table {
+  flex: 1;
+  min-width: 300px;
+  background: rgba(30, 30, 40, 0.9);
+  border: 1px solid #4a4a7a;
+  border-radius: 5px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.clickable:hover {
+  background: rgba(255, 77, 77, 0.3);
+}
+
+.selected-item {
+  color: #b0b0ff;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .strategy-container {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .strategy-container h1 {
+    font-size: 2rem;
+  }
+
+  .strategy-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .strategy-container h3 {
+    font-size: 1.1rem;
+  }
+
+  .strategy-table th,
+  .strategy-table td {
+    font-size: 0.8rem;
+    padding: 6px;
+  }
+
+  .strategy-table input {
+    font-size: 0.8rem;
+    width: 60px;
+  }
+
+  .spreads-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .spread-table {
+    min-width: 100%; /* Full width on small screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .strategy-container {
+    max-width: 100%; /* Ensure full width on larger screens */
+  }
+
+  .strategy-container h1 {
+    font-size: 3rem;
+  }
+
+  .strategy-container h2 {
+    font-size: 2rem;
+  }
+
+  .strategy-table th,
+  .strategy-table td {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}

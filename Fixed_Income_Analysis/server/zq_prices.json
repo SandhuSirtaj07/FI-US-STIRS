@@ -1,0 +1,62 @@
+[
+  {
+    "contract": "AUG 2025\nZQQ5",
+    "settle": 95.675
+  },
+  {
+    "contract": "SEP 2025\nZQU5",
+    "settle": 95.785
+  },
+  {
+    "contract": "OCT 2025\nZQV5",
+    "settle": 95.925
+  },
+  {
+    "contract": "NOV 2025\nZQX5",
+    "settle": 96.09
+  },
+  {
+    "contract": "DEC 2025\nZQZ5",
+    "settle": 96.235
+  },
+  {
+    "contract": "JAN 2026\nZQF6",
+    "settle": 96.315
+  },
+  {
+    "contract": "FEB 2026\nZQG6",
+    "settle": 96.43
+  },
+  {
+    "contract": "MAR 2026\nZQH6",
+    "settle": 96.475
+  },
+  {
+    "contract": "APR 2026\nZQJ6",
+    "settle": 96.565
+  },
+  {
+    "contract": "MAY 2026\nZQK6",
+    "settle": 96.64
+  },
+  {
+    "contract": "JUN 2026\nZQM6",
+    "settle": 96.705
+  },
+  {
+    "contract": "JUL 2026\nZQN6",
+    "settle": 96.785
+  },
+  {
+    "contract": "AUG 2026\nZQQ6",
+    "settle": 96.87
+  },
+  {
+    "contract": "SEP 2026\nZQU6",
+    "settle": 96.91
+  },
+  {
+    "contract": "OCT 2026\nZQV6",
+    "settle": 96.965
+  }
+]
